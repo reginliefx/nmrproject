@@ -1,0 +1,126 @@
+
+
+      body,html {
+        height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Kanit', sans-serif;
+      background-color: #111;
+      
+      color: #fff;
+       background-image: linear-gradient(to bottom, #000000, #111111, #151515);
+
+    }
+    .main-layout {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;             /* ระยะห่างระหว่างรูปกับปุ่ม */
+      flex-wrap: wrap;       /* ให้รองรับจอเล็กด้วย */
+      padding: 40px 20px;
+    }
+    
+    /* รูปภาพ */
+    .custom-img {
+      display: block;
+      max-width: 600px;
+      width: 90%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+    
+    /* ปุ่ม */
+    .button-container {
+      display: row;
+      flex-direction: row; /* เรียงปุ่มแนวตั้ง (เปลี่ยนเป็น row ได้ถ้าต้องการแนวนอน) */
+    }
+    
+    button {
+      padding: 15px 30px;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: 'Kanit', sans-serif;
+      cursor: pointer;
+      border: none;
+      margin-right: 50px;
+      border-radius: 8px;
+      background-color: #4CAF50;
+      color: white;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+    }
+    
+
+
+
+
+.navbar {
+  font-family: 'Kanit', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 70px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  animation: slideDown 0.5s ease;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  padding-left: 20px; /* เพิ่มระยะห่างจากซ้าย */
+}
+
+.logo {
+  color: #00c851;
+  font-size: 32px; /* ขนาดฟอนต์ใหญ่สำหรับโลโก้ */
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px; /* ปรับระยะห่างจากขอบซ้าย */
+}
+
+.navbar-right {
+  display: flex;
+  gap: 30px;
+  margin-right: 100px;
+}
+
+.nav-link {
+  font-family: 'Kanit', sans-serif;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+  white-space: nowrap; /* ไม่ให้ขึ้นบรรทัดใหม่ */
+  min-width: 120px; /* กันข้อความล้น */
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: #1db954;
+  color: #fff;
+}
+
+.nav-link.active {
+  background-color: #1db954;
+  color: #fff;
+}

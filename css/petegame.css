@@ -1,0 +1,303 @@
+body {
+  font-family: 'Kanit', sans-serif;
+  margin: 0;
+  background-color: #111;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #000000, #111111, #151515);
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 2.6rem;
+}
+
+.navbar {
+  font-family: 'Kanit', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 70px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  animation: slideDown 0.5s ease;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  padding-left: 20px; /* เพิ่มระยะห่างจากซ้าย */
+}
+
+.logo {
+  color: #00c851;
+  font-size: 32px; /* ขนาดฟอนต์ใหญ่สำหรับโลโก้ */
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px; /* ปรับระยะห่างจากขอบซ้าย */
+}
+
+.navbar-right {
+  display: flex;
+  gap: 30px;
+  margin-right: 100px;
+}
+
+.nav-link {
+  font-family: 'Kanit', sans-serif;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+  white-space: nowrap; /* ไม่ให้ขึ้นบรรทัดใหม่ */
+  min-width: 120px; /* กันข้อความล้น */
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: #1db954;
+  color: #fff;
+}
+
+.nav-link.active {
+  background-color: #1db954;
+  color: #fff;
+}
+
+
+.highlight {
+  background: linear-gradient(to right, #00c851, #007e33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  color: transparent;
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+  padding-bottom: 40px;
+}
+
+.game-item {
+  display: flex;
+  background-color: rgba(34, 34, 34, 0.3);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  max-width: 1000px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(212, 255, 212, 0.15);
+  transition: transform 0.3s;
+}
+
+.game-item:hover {
+  transform: scale(1.03);
+}
+
+.game-item img {
+  width: 180px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 25px;
+}
+
+.game-item .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game-item .info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #00c851;
+}
+
+.game-item .info p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.game-item .info a {
+  align-self: flex-end;
+  background: #00c851;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.game-item .info a:hover {
+  background: #007e33;
+}
+
+.tag-box {
+  display: inline-block;
+  align-self: flex-start;
+  background: linear-gradient(135deg, #00c851, #007e33);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 12px rgba(0, 200, 81, 0.2);
+  letter-spacing: 0.5px;
+  cursor: default;
+}
+
+
+#backToTop {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #00c851;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-button {
+  position: fixed;
+  top: 120px;
+  left: 60px;
+  background: linear-gradient(to bottom, #00c851, #007e33);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  transition: background-color 0.3s;
+}
+
+.site-footer {
+  width: 100%;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 80px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.site-footer p {
+  font-size: 1rem; /* ลดขนาดฟอนต์ให้เล็กลง */
+  margin: 0;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+/* เมื่อเมาส์ hover */
+.site-footer p:hover {
+  color: #1db954; /* สีเขียวเมื่อ hover */
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.game-item {
+  animation: fadeInUp 0.8s ease both;
+}
+
+@media (max-width: 768px) {
+  .navbar-left {
+    width: 50%;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .navbar-right {
+    margin-right: 40px;
+  }
+
+  #backToTop {
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .back-button {
+    top: 100px;
+    left: 20px;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .game-item .info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .tag-box {
+    align-self: center;
+    margin-bottom: 12px;
+  }
+
+  .game-item .info a {
+    margin-top: 10px;
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-left {
+    width: 50%;
+  }
+
+  .logo {
+    margin-left: 20px;
+    font-size: 28px;
+  }
+
+  .navbar-right {
+    margin-right: 20px;
+  }
+}
