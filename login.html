@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="logo">MOVIEZ</div>
+    
+    <div class="login-container">
+        <h1>เข้าสู่ระบบ</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">ชื่อผู้ใช้</label>
+                <input type="text" id="username" name="username" autocomplete="username">
+                <div id="usernameError" class="error-message">ชื่อผู้ใช้ต้องประกอบด้วยตัวอักษร a-z, A-Z และตัวเลข 0-9 เท่านั้น</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">รหัสผ่าน</label>
+                <input type="password" id="password" name="password" autocomplete="current-password">
+                <div id="passwordError" class="error-message">
+                    รหัสผ่านต้องมีอย่างน้อย 6 ตัวอักษร
+                </div>
+                
+            </div>
+            
+            <div class="btn-wrapper">
+                <button type="submit" id="loginButton" disabled>เข้าสู่ระบบ</button>
+                <span class="btn-highlight"></span>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

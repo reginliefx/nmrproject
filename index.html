@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MovieZ - หน้าแรก</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="index.html" class="logo">MovieZ</a>
+    </div>
+    <div class="navbar-right">
+        <a href="top-movies.html" class="nav-link">รวมหนัง</a>
+        <a href="moHome.html" class="nav-link">จุ่มหนัง&เกม</a>
+        <a href="petegame.html" class="nav-link">เกมมาแรง</a>
+        <button class="logout-btn" onclick="window.location.href='login.html'">Logout</button>
+    </div>
+  </nav>
+
+  <div>
+    <h1>ยินดีต้อนรับเข้าสู่เว็บไซต์!</h1>
+    <p>ที่นีมีทุกอย่างที่คุณต้องการ ถึงจะมีแค่สองอย่าง ไม่ว่าจะเป็นเรื่องหนัง และ เรื่องเกม!</p>
+  </div>
+
+  <section class="banner">
+    <h2>✅หมวดหมู่ยอดฮิตประจำสัปดาห์✅</h2>
+    <p>อัปเดตข่าวสารฮิตประจำสัปดาห์!</p>
+  </section>
+  
+  <div class="info-section">
+    <div class="info-box">
+      <img src="img/weakhero.png" alt="เกม1" class="multi-img-item">
+      <img src="img/squidgame.png" alt="เกม2" class="multi-img-item">
+      <img src="img/strangerthing.png" alt="เกม3" class="multi-img-item">
+      <div class="info-text">
+        <h2>รวมหนังยอดฮิต</h2>
+        <p>สำรวจหนังยอดนิยมจาก Netflix, Disney+, HBO และอื่นๆ อีกมากมาย พร้อมพากย์ไทยและคำบรรยายครบถ้วน</p>
+        <a href="top-movies.html" class="btn-more">ดูเพิ่มเติม</a>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <img src="img/roblox.png" alt="เกม1" class="multi-img-item">
+      <img src="img/valorant.png" alt="เกม2" class="multi-img-item">
+      <img src="img/hsr.png" alt="เกม3" class="multi-img-item">
+
+      <div class="info-text">
+        <h2>เกมมาแรง</h2>
+        <p>ติดตามข่าวสารเกมใหม่ รีวิวเกมมือถือและพีซี พร้อมเทคนิคและอัปเดตต่างๆ</p>
+        <a href="petegame.html" class="btn-more">ดูเพิ่มเติม</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="feature-transparent">
+    <div class="feature-item">
+      <img src="img/movie.png" alt="Movie Icon" class="feature-icon">
+      <h3>อัปเดตวงการหนัง</h3>
+      <p>รวมข่าวสารภาพยนตร์ใหม่ล่าสุด ทั้งในไทยและต่างประเทศ พร้อมบทวิเคราะห์ เจาะลึกก่อนใคร!</p>
+    </div>
+    <div class="feature-item">
+      <img src="img/game.png" alt="Game Icon" class="feature-icon">
+      <h3>แนะนำเกมฮิต</h3>
+      <p>แนะนำเกมมาแรงในทุกๆแพลตฟอร์ม ทั้ง PC, มือถือ และ Console พร้อมวิดิโอเกมเพลย์และ Trailer ต่างๆ!</p>
+    </div>
+    <div class="feature-item">
+      <img src="img/update.png" alt="Community Icon" class="feature-icon">
+      <h3>อัพเดทตลอด!</h3>
+      <p>อัพเดทข่าวท่วงทันทุกเหตุการณ์ ได้ที่เว็บของเราได้ทุกวัน ไม่ว่าจะข่าว เกม หนัง หรืออื่นๆอีกมากมาย!</p>
+    </div>
+    
+  </div>
+
+<footer class="site-footer">
+  <p>&copy; 2025 MovieZ. All rights reserved.</p>
+</footer>
+
+  <button onclick="scrollToTop()" id="backToTop" title="ขึ้นด้านบน">⬆️</button>
+  <button onclick="toggleTheme()" id="toggleTheme" title="เปลี่ยนธีม">🎨</button>
+  <audio id="themeSound" src="waterdrop.mp3" preload="auto"></audio>
+
+  <script src="js/script.js"></script>
+  
+</body>
+</html>

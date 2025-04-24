@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เลือก</title>
+  <link rel="stylesheet" href="css/moMovie.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="index.html" class="logo">MovieZ</a>
+    </div>
+    <div class="navbar-right">
+      <a href="top-movies.html" class="nav-link">รวมหนัง</a>
+        <a href="moHome.html" class="nav-link">จุ่มหนัง&เกม</a>
+        <a href="petegame.html" class="nav-link">เกมมาแรง</a>
+    </div>
+  </nav>
+
+
+    <div class="flex-center">
+        <span>
+            <h1>คลิกเพื่อสุ่มหนัง</h1>
+            <h2 id="title"></h2>
+            <img id="randomImg" src="/imgM/020m.png" alt="Random Image" class="first-img">
+            <br>
+            <div id="caption1"></div>
+            <br>
+
+            <button onclick="getRandomMovie()">สุ่มเลย!</button>
+            
+         
+
+
+
+        </span>
+    </div>
+    <script src="js/moMovie.js"></script>
+    <a href="moHome.html" class="back-button">⬅ ย้อนกลับ</a>
+</body>
+</html>
